@@ -9,7 +9,7 @@ layout: default
   </div>
   <div class="meta">
     <div class="byline">Posted {{ post.date | format_date_in_english }}</div>
-    <div class="links">&raquo;&nbsp;&nbsp; <a href="#">Comments</a></div>
+    <div class="links">&raquo;&nbsp;&nbsp; <a href="{{ post.url }}#disqus_thread">Comments</a></div>
   </div>
 </div>
 {% endfor %}
