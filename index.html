@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<div class="post">
+  <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="entry">
+    {{ post.content }}
+  </div>
+  <div class="meta">
+    <div class="byline">Posted {{ post.date | format_date_in_english }}</div>
+    <div class="links">&raquo;&nbsp;&nbsp; <a href="#">Comments</a></div>
+  </div>
+</div>
+{% endfor %}
