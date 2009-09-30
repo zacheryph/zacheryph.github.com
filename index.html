@@ -8,7 +8,7 @@ layout: default
     {{ post.content }}
   </div>
   <div class="meta">
-    <div class="byline">Posted {{ post.date | date: '%Y-%m-%d' }}</div>
+    <div class="byline">Posted on {{ post.date | date: '%A, %B d, %Y' }}</div>
     <div class="links">&raquo;&nbsp;&nbsp; <a href="{{ post.url }}#disqus_thread">Comments</a></div>
   </div>
 </div>
